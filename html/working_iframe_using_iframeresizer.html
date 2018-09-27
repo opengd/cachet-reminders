@@ -1,0 +1,15 @@
+<!-- Add to the page that should be hosted in iframe. (https://github.com/davidjbradshaw/iframe-resizer) 
+https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.2/iframeResizer.contentWindow.min.js
+-->
+<script>
+	var cons = document.getElementsByClassName("container");
+if(cons && cons.length > 0) {
+	cons[0].style.maxWidth = "100%";
+	cons[0].style.leftMargin = "0px";
+	cons[0].style.rightMargin = "0px";
+	cons[0].style.padding = "42px 0px 5px 0px";
+}
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.min.js"></script>
+<style type="text/css">iframe{width: 1px;min-width: 100%;}
+</style>
+<div><iframe id="myIframe" onload="iFrameResize({log:false}, '#myIframe')" scrolling="no" src="https://THE_IFRAME_URL"></iframe></div>
